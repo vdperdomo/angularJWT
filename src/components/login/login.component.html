@@ -1,0 +1,27 @@
+<mat-card class="login">
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="form">
+      <table cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field>
+            <input matInput placeholder="Username"  name="username" formControlName="username" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+        <td><mat-form-field>
+          <input matInput placeholder="Password" type="password" name="password" formControlName="password" required>
+        </mat-form-field></td>
+      </tr></table>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary">Login</button>
+  </mat-card-actions>
+</mat-card>
+
+<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/labs/kendo/kendo-umbrella/angular-bg.jpg?sfvrsn=b28d9d87_4" alt="">
